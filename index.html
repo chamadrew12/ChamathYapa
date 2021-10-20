@@ -1,0 +1,192 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chamath Yapa Badara</title>
+
+    <!--Google font oswarld-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+
+    <!--google font poppings-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+    <!--font awesome-->
+    <script src="https://kit.fontawesome.com/489cac4b02.js" crossorigin="anonymous"></script>
+
+
+    <!--Bootstrap linking-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css">
+
+    <!--css link-->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    
+    <!--navigation-->
+
+    <main class="main">
+        <header class="header">
+            <div class="wrap d-flex">
+                
+                <h1 class="logo">
+                    <a href=""><img src="images/logo5.png" alt=""></a>
+                </h1>
+            
+                <nav class="menu">
+                    <ul>
+                        <li><a href="">Home</a></li>
+                        <li><a href="">About</a></li>
+                        <li><a href="">Pages</a></li>
+                        <li><a href="">Blog</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <a href="javascript:void(0);" class="sidemenu-toggler">
+                <span></span>
+                <span></span>
+                <span></span>
+            </a>
+
+            <div class="sidemenu">
+                <a href="javascript:void(0);" class="close"></a>
+                <nav>
+                    <ul>
+                        <li><a href="">Home</a></li>
+                        <li><a href="">About</a></li>
+                        <li><a href="">Pages</a></li>
+                        <li><a href="">Blog</a></li>
+                    </ul>
+                </nav>
+                <footer>
+                    <div class="social">
+                        <a href=""><img src="images/linkedin.png" alt=""></a>
+                        <a href=""><img src="images/facebook.png" alt=""></a>
+                        <a href=""><img src="images/twitter.png" alt=""></a>
+                    </div>
+                    <p>2021 chamath, made with me</p>
+                </footer>
+            </div>
+        </header>
+    </main>
+
+    <!--home starts-->
+
+    <br><br><br><br><br>
+
+    <section class="home container text-white">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="hero-text">
+                    <span class="title">Hello I'm</span><br>
+                    <span class="name">Chamath </span><br>
+                    <span class="name">Yapa Bandara</span><br>
+                    <span class="designation">Cyber Security Consultant</span><br>
+                    <span class="email"><i class="fa fa-envelope"></i> 
+                      chamathkumara5@gmail.com</span><br>
+                    <span class="phone"><i class="fa fa-phone"></i> +94 70 519 9533</span>
+
+                    <div class="social-icons d-flex">
+                        <li><i class="fab fa-linkedin"></i></li>
+                        <li><i class="fa fa-facebook"></i></li>
+                        <li><i class="fa fa-twitter"></i></li>
+                    </div>
+
+                </div>                
+            </div>
+
+            <div class="col-md-6">
+                <div class="hero-img">
+                    <div class="img-border">
+                        <img src="images/profileimg.png" class="img-fluid" alt="">
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+      <!--about starts-->
+
+      <br><br><br><br><br><br>
+
+      <section class="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <img src="images/about.png" alt="">
+                    <br>
+                </div>
+                <div class="col-md-5 text-white gap">
+                   
+                    <h2>About me</h2>
+                    <br>
+                    <p>
+                        I am a graduate with a degree in BSc (Hons) Computer Science at NSBM green university 
+                        under the guidance of lectures from University College Dublin (UCD) in Ireland. 
+                        I hope to gain experience in the field of Information Technology and also utilize my skills, 
+                        in order to increase productivity of organization and individual growth.
+                    </p>
+                    <br>
+                    <div class="tag">
+                        <ul>
+                            <li><span>php</span></li>
+                            <li><span>php</span></li>
+                            <li><span>php</span></li>
+                            <li><span>php</span></li>
+                            <li><span>php</span></li>
+                            <li><span>php</span></li>
+                        </ul>
+                    </div>
+                    <br>
+                    <div class="download-button">
+                        <a href="" class="btn btn-danger">Download CV</a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+      </section>
+
+
+
+
+
+
+   <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+
+    <script>
+
+        $(document).ready(function(){
+            $(".sidemenu-toggler").click(function(){
+                $(".sidemenu").addClass("active");
+            });
+
+            $(".close").click(function(){
+                $(".sidemenu").removeClass("active");
+            });
+
+            $(window).scroll(function(){
+                var sc = $(window).scrollTop();
+                if (sc > 150){
+                    $(".header").addClass("sticky");
+                }else{
+                    $(".header").removeClass("sticky");
+                }
+            });
+        });
+
+    </script>
+
+</body>
+</html>
